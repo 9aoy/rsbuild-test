@@ -8,6 +8,7 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
+    "sass": "^1.80.6",
     "vue": "^3.5.12"
   },
   "devDependencies": {
@@ -15,8 +16,8 @@
     "@rsbuild/plugin-assets-retry": "1.0.3",
     "@rsbuild/plugin-css-minimizer": "1.0.2",
     "@rsbuild/plugin-image-compress": "1.0.2",
-    "@rsbuild/plugin-vue": "1.0.2",
     "@rsbuild/plugin-sass": "1.0.4",
+    "@rsbuild/plugin-vue": "1.0.2",
     "typescript": "^5.6.3"
   }
 }

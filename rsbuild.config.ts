@@ -13,8 +13,8 @@ export default defineConfig({
     pluginImageCompress(),
     pluginSass({
       sassLoaderOptions: {
-        api: 'modern'
-      }
+        implementation: require.resolve('sass'),
+      },
     }),
   ],
 });
