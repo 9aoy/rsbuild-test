@@ -1,6 +1,6 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginReact } from '@rsbuild/plugin-react';
+import { pluginVue } from '@rsbuild/plugin-vue';
 
 export default defineConfig({
-  plugins: [pluginReact()],
+  plugins: [pluginVue()],
 });
