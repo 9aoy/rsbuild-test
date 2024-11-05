@@ -11,6 +11,10 @@ export default defineConfig({
     pluginAssetsRetry(),
     pluginCssMinimizer(),
     pluginImageCompress(),
-    pluginSass(),
+    pluginSass({
+      sassLoaderOptions: {
+        api: 'modern'
+      }
+    }),
   ],
 });
