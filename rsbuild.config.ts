@@ -13,7 +13,7 @@ export default defineConfig({
     pluginImageCompress(),
     pluginSass({
       sassLoaderOptions: {
-        implementation: require.resolve('sass'),
+        // implementation: require.resolve('sass'),
       },
     }),
   ],
