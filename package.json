@@ -16,6 +16,7 @@
     "@rsbuild/plugin-css-minimizer": "1.0.2",
     "@rsbuild/plugin-image-compress": "1.0.2",
     "@rsbuild/plugin-vue": "1.0.2",
+    "@rsbuild/plugin-sass": "1.0.4",
     "typescript": "^5.6.3"
   }
 }
