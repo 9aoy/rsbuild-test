@@ -14,7 +14,7 @@ export default defineConfig({
     pluginSass({
       sassLoaderOptions: {
         api: 'modern',
-        // implementation: require.resolve('sass'),
+        implementation: require.resolve('sass-embedded'),
       },
     }),
   ],
