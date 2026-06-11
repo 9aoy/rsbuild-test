@@ -1,9 +1,12 @@
-import { defineConfig } from 'vitest/config';
+import { cloudflareTest } from '@cloudflare/vitest-pool-workers';
+import { defineProject } from 'vitest/config';
 
-// Docs: https://vitest.dev/config/
-export default defineConfig({
-  test: {
-    environment: 'happy-dom',
-    setupFiles: ['./tests/vitest.setup.ts'],
-  },
+export default defineProject({
+  plugins: [
+    cloudflareTest({
+      wrangler: {
+        configPath: './wrangler.jsonc',
+      },
+    }),
+  ],
 });
