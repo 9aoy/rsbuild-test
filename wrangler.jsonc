@@ -1,5 +1,8 @@
 {
   "name": "rsbuild-test-vitest-example",
-  "main": "src/worker.ts",
-  "compatibility_date": "2026-06-11"
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-11",
+  "vars": {
+    "MESSAGE": "Hello from Cloudflare Workers"
+  }
 }
