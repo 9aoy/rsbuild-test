@@ -1,8 +1,10 @@
 import { expect, test } from 'vitest';
 
-test('browser DOM globals are available', () => {
-  // This intentionally models a browser-only assumption. It would pass in a
-  // DOM-like test environment such as happy-dom, but fails in the Cloudflare
-  // Workers runtime because Workers do not expose document/window DOM globals.
-  expect(globalThis.document).toBeDefined();
+test('Node child_process APIs are available', async () => {
+  // This intentionally models a Node-only assumption. It passes in a regular
+  // Node.js Vitest environment, but fails in the Cloudflare Workers runtime
+  // because Workers cannot spawn local OS processes.
+  const childProcess = await import('node:child_process');
+
+  expect(childProcess.execFile).toBeTypeOf('function');
 });
